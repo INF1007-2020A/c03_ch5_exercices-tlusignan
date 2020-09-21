@@ -32,8 +32,8 @@ def prime_integer_summation() -> int:
         if isPrime:
             sumofprimes+=num
             n += 1
-        else:
-        num+=1
+        
+        num += 1
     return sumofprimes
 
 
