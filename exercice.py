@@ -52,7 +52,7 @@ def use_continue() -> None:
 
 
 def main() -> None:
-    # print(f"La valeur absolue du nombre est {convert_to_absolute()}")
+    print(f"La valeur absolue du nombre est {convert_to_absolute()}")
 
     print(f"La liste des noms générés avec les préfixes est: {use_prefixes()}")
 
