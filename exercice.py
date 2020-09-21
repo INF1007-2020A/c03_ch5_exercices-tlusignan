@@ -22,27 +22,24 @@ def use_prefixes() -> List[str]:
 
 
 def prime_integer_summation() -> int:
-    n=1
-    num = 1
-    sumofprimes = 0
+    n, num, sumofprimes = 1, 2, 0
     while n<=100:
         isPrime = True
-        for n in range(2, num//2):
-            if (num%n) == 0:
+        for div in range(2, num-1):
+            if (num%div) == 0:
                 isPrime=False
 
         if isPrime:
             sumofprimes+=num
             n += 1
-            # print(f'{n} {num} {sumofprimes}')
-
-        num+=2
+        else:
+        num+=1
     return sumofprimes
 
 
 def factorial(number: int) -> int:
     fact=1
-    for n in range(1, number):
+    for n in range(1, number+1):
         fact *= n
     return fact
 
@@ -55,7 +52,7 @@ def use_continue() -> None:
 
 
 def main() -> None:
-    print(f"La valeur absolue du nombre est {convert_to_absolute()}")
+    # print(f"La valeur absolue du nombre est {convert_to_absolute()}")
 
     print(f"La liste des noms générés avec les préfixes est: {use_prefixes()}")
 
